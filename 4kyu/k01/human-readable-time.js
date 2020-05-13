@@ -6,7 +6,7 @@ const formatDuration = (seconds) => {
     const days    = Math.floor(seconds / (3600*24)) - (years*365)
     const hours   = Math.floor(seconds / 3600) - (days*24) - (years*365*24)
     const minutes = Math.floor(seconds / 60) - (hours * 60) - (days*24*60) - (years*365*24*60);
-    const secs = seconds - (minutes * 60) - (hours * 3600) - (days*24*3600) - (years*365*24*3600);
+    const secs    = seconds - (minutes * 60) - (hours * 3600) - (days*24*3600) - (years*365*24*3600);
     
     const times = [" year", " day", " hour", " minute", " second"]
     
